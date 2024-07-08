@@ -10,5 +10,6 @@ public class Main {
         var orm = new Orm("jdbc:postgresql://localhost:5433/bibernate", username, password);
         var participant = orm.findById(Participant.class, 3);
         System.out.println(participant);
+
     }
 }
