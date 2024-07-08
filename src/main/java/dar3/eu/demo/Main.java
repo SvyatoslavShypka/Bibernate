@@ -8,7 +8,7 @@ public class Main {
         String password = System.getenv("DB_PASSWORD");
         String username = System.getenv("DB_USER");
         var orm = new Orm("jdbc:postgresql://localhost:5433/bibernate", username, password);
-        var participant = orm.findById(Participant.class, 3);
+        var participant = orm.findById(Participant.class, 4);
         System.out.println(participant);
 
     }
