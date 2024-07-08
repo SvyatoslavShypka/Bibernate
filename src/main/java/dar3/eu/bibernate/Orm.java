@@ -20,7 +20,10 @@ public class Orm {
     @SneakyThrows
     public <T> T findById(Class<T> entityType, Object id) {
         try (var connection = dataSource.getConnection()) {
-            try (var selectStatement = connection.prepareStatement("SELECT * FROM participants WHERE id = ?")) {
+            var tableName = "participants";
+            var idColumnName = "id";
+            String selectSQL = "SELECT * FROM %s WHERE %s = ?".formatted(tableName, idColumnName);
+            try (var selectStatement = connection.prepareStatement(selectSQL)) {
                 selectStatement.setObject(1, id);
                 var rs = selectStatement.executeQuery();
                 if (rs.next()) {
