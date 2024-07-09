@@ -68,6 +68,7 @@ public class Orm {
         if (columnValue instanceof Timestamp timestamp) {
             return timestamp.toLocalDateTime();
         }
+
         return columnValue;
     }
 
