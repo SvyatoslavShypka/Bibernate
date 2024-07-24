@@ -41,6 +41,7 @@ public class SessionImpl implements Session {
 
     @Override
     public void close() {
+
         this.closed = true;
     }
 }
