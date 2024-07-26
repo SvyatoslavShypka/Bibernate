@@ -38,6 +38,7 @@ public class SessionImpl implements Session {
 
     private void checkOpen() {
 
+
     }
 
     @Override
