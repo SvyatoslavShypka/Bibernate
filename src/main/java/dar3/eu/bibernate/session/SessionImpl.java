@@ -38,11 +38,11 @@ public class SessionImpl implements Session {
 
     private void checkOpen() {
 
-
     }
 
     @Override
     public void close() {
+
         this.closed = true;
     }
 }
