@@ -18,7 +18,7 @@ public class Main {
             }
         }
 
-        System.out.println(fizzBuzz(100));
+//        System.out.println(fizzBuzz(100));
 
 
         String password = System.getenv("DB_PASSWORD");
