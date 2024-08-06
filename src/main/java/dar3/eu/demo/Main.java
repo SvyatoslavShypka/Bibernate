@@ -14,6 +14,8 @@ public class Main {
         var session = sessionFactory.openSession();
 
         var participant = session.findById(Participant.class, 4);
+
+
         System.out.println(participant);
 
     }
