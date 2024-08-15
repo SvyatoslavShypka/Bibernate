@@ -20,6 +20,7 @@ public class Participant {
     @Column("first_name")
     private String firstName;
 
+    @Column("last_name")
     private String lastName; // last_name
     private String city;
     private String company;
