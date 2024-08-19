@@ -11,7 +11,7 @@ public class Main {
         String password = System.getenv("DB_PASSWORD");
         String username = System.getenv("DB_USER");
         String jdbcUrl = "jdbc:postgresql://localhost:5433/bibernate";
-        var sessionFactory = new SessionFactoryImpl(jdbcUrl, username, password);
+//        var sessionFactory = new SessionFactoryImpl(jdbcUrl, username, password);
 /*
         var session = sessionFactory.openSession();
         var participant = session.findById(Participant.class, 4);
