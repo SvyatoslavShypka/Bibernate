@@ -70,6 +70,7 @@ public class Orm {
     private Object getFieldValue(Field field, ResultSet rs) {
         var columnName = resolveColumnName(field);
         var columnValue = rs.getObject(columnName);
+        
         if (columnValue instanceof Timestamp timestamp) {
             return timestamp.toLocalDateTime();
         }
